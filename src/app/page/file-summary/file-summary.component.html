@@ -1,0 +1,36 @@
+<h1 class="title">File Validation Summary</h1>
+
+<app-two-column-tile>
+  <ng-container first>
+    <div class="block">
+      <div class="is-size-4 has-text-centered is-underlined">Valid Transactions</div>
+    </div>
+    <br>
+    <app-two-column-content
+      [label]="'Total Valid Rows:'"
+      [info]="getTotalValidRows()">
+    </app-two-column-content>
+    <app-two-column-content
+      [label]="'Date Range:'"
+      [info]="getDateRange()">
+    </app-two-column-content>
+    <app-two-column-content
+      [label]="'Total Sales:'"
+      [info]="getTotalSales()">
+    </app-two-column-content>
+    <app-two-column-content
+      [label]="'Total Tax:'"
+      [info]="getTotalTax()">
+    </app-two-column-content>
+  </ng-container>
+  <ng-container second>
+    <div class="block">
+      <div class="is-size-4 has-text-centered is-underlined">Invalid Transactions</div>
+    </div>
+    <br>
+    <app-two-column-content
+      [label]="'Total Invalid Rows:'"
+      [info]="getTotalInvalidRows()">
+    </app-two-column-content>
+  </ng-container>
+</app-two-column-tile>

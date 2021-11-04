@@ -1,0 +1,12 @@
+.min-tile-height {
+  min-height: 400px;
+}
+
+.box {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.tile.is-child {
+  border: 2px black solid;
+}

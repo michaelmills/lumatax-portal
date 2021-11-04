@@ -1,0 +1,50 @@
+<h1 class="title">File Upload</h1>
+
+<app-two-column-tile>
+  <ng-container first>
+    <div class="centerall">
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="file has-name is-info is-boxed">
+          <label class="file-label">
+            <input class="file-input" type="file" (change)="onFileChange($event)">
+            <span class="file-cta">
+              <span class="file-icon">
+                <fa-icon [icon]="uploadIcon"></fa-icon>
+              </span>
+              <span class="file-label">
+                Select File
+              </span>
+            </span>
+            <span class="file-name">
+              {{ filename }}
+            </span>
+          </label>
+        </div>
+        <br>
+        <div class="centerall">
+          <button class="button is-success is-outlined" type="submit">
+            Upload
+          </button>
+        </div>
+      </form>
+    </div>
+  </ng-container>
+  <ng-container second>
+    <div class="content is-vcentered">
+      <div class="block">
+        File type <strong>must</strong> be .csv<br>
+      </div>
+      <div class="block">
+        The first row of the file is the column header and includes:
+        <ul>
+          <li>Invoice ID</li>
+          <li>Date</li>
+          <li>Total Sales</li>
+          <li>Total Tax</li>
+          <li>State</li>
+          <li>Zipcode</li>
+        </ul>
+      </div>
+    </div>
+  </ng-container>
+</app-two-column-tile>

@@ -1,0 +1,21 @@
+.content.is-vcentered {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.centerall {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.file-name {
+  min-width: 200px;
+  max-width: 200px;
+}
